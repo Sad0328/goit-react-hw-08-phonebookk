@@ -10,7 +10,7 @@ import {
   Box,
   Grid,
 } from '@mui/material';
-import LockOutlinedIcon from '@mui/icons-material/LockOutlined';
+ import KeyIcon  from '@mui/icons-material/Key';
 
 const INITIAL_STATE = {
   name: '',
@@ -48,7 +48,7 @@ const RegisterForm = ({ onSubmit }) => {
       <CssBaseline />
       <Box sx={boxFormStyle}>
         <Avatar sx={avatarStyle}>
-          <LockOutlinedIcon />
+          { <KeyIcon  /> }
         </Avatar>
         <Typography component="h1" variant="h5">
           Sign up

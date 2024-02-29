@@ -4,7 +4,7 @@ import { selectPhoneBookValue } from '../../redux/contacts/contacts-selectors';
 import { addContacts } from '../../redux/contacts/contacts-operations';
 import { useDispatch, useSelector } from 'react-redux';
 import { Avatar, Button, TextField, Box, Typography } from '@mui/material';
-import ContactsIcon from '@mui/icons-material/Contacts';
+import PermContactCalendarIcon from '@mui/icons-material/PermContactCalendar';
 import { Notify } from 'notiflix/build/notiflix-notify-aio';
 
 export const ContactForm = () => {
@@ -38,7 +38,7 @@ export const ContactForm = () => {
     ) {
       Notify.warning(`${data.name} is already in the contact list`, {
         width: '400px',
-        timeout: 5000,
+        timeout: 500,
         fontSize: '24px',
       });
       return;
@@ -55,14 +55,14 @@ export const ContactForm = () => {
   return (
     <>
       <Avatar sx={avatarStyle}>
-        <ContactsIcon />
+        <PermContactCalendarIcon />
       </Avatar>
       <Typography component="h1" variant="h5">
         Add Contact
       </Typography>
       <Box component="form" onSubmit={OnChangeSubmit} sx={{ mt: 1 }}>
         <TextField
-          sx={{ backgroundColor: 'rgba(208, 224, 241, 0.822)' }}
+          sx={{ backgroundColor: '#f656cd' }}
           inputProps={{
             inputMode: 'text',
             pattern: '^[a-zA-Zа-яА-Я]+(([a-zA-Zа-яА-Я ])?[a-zA-Zа-яА-Я]*)*$',
@@ -78,7 +78,7 @@ export const ContactForm = () => {
           onChange={OnChangeInput}
         />
         <TextField
-          sx={{ backgroundColor: 'rgba(208, 224, 241, 0.822)' }}
+          sx={{ backgroundColor: '#f656cd' }}
           inputProps={{
             inputMode: 'tel',
             pattern:
@@ -98,7 +98,8 @@ export const ContactForm = () => {
           type="submit"
           fullWidth
           variant="contained"
-          sx={{ mt: 3, mb: 2, display: 'flex', gap: 3 }}
+         
+          sx={{ backgroundColor: '#f656cd' }}
         >
           <p>Add contact</p>
         </Button>

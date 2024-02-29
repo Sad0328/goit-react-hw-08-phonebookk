@@ -15,9 +15,9 @@ export const Filter = () => {
         margin="normal"
         sx={{
           width: 400,
-          bgcolor: 'rgba(208, 224, 241, 0.822)',
+          bgcolor: '#f656cd',
         }}
-        label="Search:"
+        label="Search your contact:"
         type="text"
         value={filter}
         name="filter"

@@ -3,7 +3,7 @@ export const ErrorStyle = {
   width: 400,
   p: 5,
   borderRadius: 3,
-  backgroundColor: 'red',
+  backgroundColor: '#f656cd',
   display: 'flex',
   justifyContent: 'center',
   alignItems: 'center',

@@ -8,8 +8,8 @@ export const Error = () => {
   const error = useSelector(selectError);
   return (
     <Box sx={ErrorStyle}>
-      <Typography color="white" component="h2" variant="h3">
-        Sorry, temporary error on the site: {error}
+      <Typography color="#f656cd" component="h2" variant="h3">
+        Sorry, error: {error}
       </Typography>
     </Box>
   );

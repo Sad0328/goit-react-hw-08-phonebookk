@@ -4,7 +4,7 @@ import { logout } from '../../../redux/auth/auth-operations';
 import { useDispatch, useSelector } from 'react-redux';
 
 import { Button, Toolbar } from '@mui/material';
-import LogoutOutlinedIcon from '@mui/icons-material/LogoutOutlined';
+import ExitToAppIcon from '@mui/icons-material/ExitToApp';
 
 const NavbarUser = () => {
   const { name } = useSelector(selectUser);
@@ -19,7 +19,7 @@ const NavbarUser = () => {
         variant="text"
         color="inherit"
         type="button"
-        startIcon={<LogoutOutlinedIcon />}
+        startIcon={<ExitToAppIcon />}
         onClick={onLogout}
       >
         Log Out

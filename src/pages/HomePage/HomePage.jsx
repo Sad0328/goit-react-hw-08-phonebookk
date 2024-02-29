@@ -1,46 +1,51 @@
 import React from 'react';
-import { Paper, Typography, Box } from '@mui/material';
+import { Typography, Box } from '@mui/material';
 import { selectAuthIsLogin, selectUser } from '../../redux/auth/auth-slectors';
-import photo from '../../photo/photo.jpg';
+
 import { useSelector } from 'react-redux';
-import { boxMainStyle, paperMainStyle } from '../Styled';
+import { boxMainStyle } from '../Styled';
 
 const HomePage = () => {
   const isLoggedIn = useSelector(selectAuthIsLogin);
   const user = useSelector(selectUser);
 
   return (
-    <Paper sx={paperMainStyle(photo)}>
-      <Box sx={boxMainStyle}>
-        {isLoggedIn ? (
-          <>
-            <Typography
-              component="h1"
-              variant="h3"
-              color="inherit"
-              gutterBottom
+    
+    <Box sx={boxMainStyle}>
+      {isLoggedIn ? (
+        <>
+          <Typography component="h1" variant="h2" color="red" gutterBottom>
+            <p
+              style={{
+                color: '#f656cd',
+                display: 'flex',
+                justifyContent: 'center',
+                textAlign: 'centre',
+              }}
             >
-              Hi, {user.name}! <br />
-              Welcome to your phonebook.{' '}
-            </Typography>
-          </>
-        ) : (
-          <>
-            <Typography
-              component="h1"
-              variant="h3"
-              color="inherit"
-              gutterBottom
+              HELLO, {user.name}! Welcome to your phonebook.{' '}
+            </p>
+          </Typography>
+        </>
+      ) : (
+        <>
+          <Typography component="h1" variant="h3" color="inherit" gutterBottom>
+            <p
+              style={{
+                color: '#f656cd',
+                display: 'flex',
+                justifyContent: 'center',
+                textAlign: 'centre',
+              }}
             >
-              Hello! I'm your phonebook.{' '}
-            </Typography>
-            <Typography variant="h5" color="inherit" paragraph>
-              Please login or register.
-            </Typography>
-          </>
-        )}
-      </Box>
-    </Paper>
+                Hello! This is phonebook.
+                Please login or register.
+            </p>
+          </Typography>
+        </>
+      )}
+    </Box>
+    
   );
 };
 

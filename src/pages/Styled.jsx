@@ -1,14 +1,13 @@
 export const paperMainStyle = photo => ({
   position: 'relative',
-  backgroundColor: 'grey',
-  color: '#fff',
-  mb: 4,
-  mt: 10,
+  color: '#f656cd',
+  mb: 40,
+  mt: 20,
   backgroundSize: 'cover',
-  backgroundRepeat: 'no-repeat',
-  backgroundPosition: 'bottom',
+
   backgroundImage: `url(${photo})`,
-  minHeight: 450,
+  minHeight: 500,
+  minWidth: 100,
 });
 
 export const boxMainStyle = {
@@ -21,7 +20,7 @@ export const boxContactsStyle = {
   display: 'flex',
   flexDirection: 'column',
   alignItems: 'center',
-  bgcolor: 'rgba(145, 185, 229, 0.15)',
+  bgcolor: '#56eef6',
   mx: 'auto',
   borderRadius: 3,
   maxWidth: 700,

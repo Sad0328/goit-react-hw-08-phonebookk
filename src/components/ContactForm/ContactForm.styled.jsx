@@ -1,4 +1,4 @@
 export const avatarStyle = {
   m: 1,
-  bgcolor: 'secondary.main',
+  bgcolor: '#f656cd',
 };

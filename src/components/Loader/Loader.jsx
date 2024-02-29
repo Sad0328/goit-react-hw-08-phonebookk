@@ -1,16 +1,15 @@
 import React from 'react';
-import { Hourglass } from 'react-loader-spinner';
+import { DNA } from 'react-loader-spinner';
 
 export const Loader = () => {
   return (
-    <Hourglass
+    <DNA
       visible={true}
-      height="30"
-      width="30"
-      ariaLabel="hourglass-loading"
+      height="80"
+      width="80"
+      ariaLabel="dna-loading"
       wrapperStyle={{}}
-      wrapperClass=""
-      colors={['#306cce', '#72a1ed']}
+      wrapperClass="dna-wrapper"
     />
   );
 };

@@ -1,6 +1,6 @@
 export const avatarStyle = {
   m: 1,
-  bgcolor: 'secondary.main',
+  bgcolor: 'info.main',
 };
 
 export const boxFormStyle = {

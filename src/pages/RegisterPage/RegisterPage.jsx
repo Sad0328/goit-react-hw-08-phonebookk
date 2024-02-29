@@ -23,7 +23,7 @@ const RegisterPage = () => {
       {authError && (
         <p
           style={{
-            color: 'red',
+            color: 'pink',
             display: 'flex',
             justifyContent: 'center',
             textAlign: 'centre',

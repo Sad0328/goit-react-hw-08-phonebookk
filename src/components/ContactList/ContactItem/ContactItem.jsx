@@ -1,6 +1,6 @@
 import React from 'react';
 import { ListItem, IconButton, ListItemText } from '@mui/material';
-import DeleteIcon from '@mui/icons-material/Delete';
+import HighlightOffIcon from '@mui/icons-material/HighlightOff';
 import { useDispatch } from 'react-redux';
 import { deleteContact } from '../../../redux/contacts/contacts-operations';
 
@@ -18,7 +18,7 @@ export const ContactItem = ({ name, number, id }) => {
         }}
         aria-label="delete"
       >
-        <DeleteIcon />
+        <HighlightOffIcon />
       </IconButton>
     </ListItem>
   );
